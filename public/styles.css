@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Source Code Pro';
+    src:  url('fonts/SourceCodePro.ttf') format('ttf');
+}
+
+html {
+    font-size: 0.9rem;
+    color: black;
+    background-color: white;
+}
+body {
+    margin: 0;
+    font-family: Source Code Pro, monospace;
+    min-height: 100vh;
+    padding: 1%
+}
+
+.container {
+    padding: 4px;
+    background-color: white;
+    max-width: 500px;
+    margin-right: auto;
+}
+
+.border-bottom-dashed {
+    border-bottom: 1px dashed black;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+p {
+    margin: 0;
+    cursor: pointer;
+}
+span {
+    border: 1px solid blue;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+span:hover {
+    color: white;
+    background-color: blue;
+}
+
+a {
+    color: black;
+    font-style: italic;
+    background-color: red;
+    color: white;
+}
+
+a:hover {
+    background-color: white;
+    color: red;
+    outline: 1px solid red;
+}
+
+.marquee-container {
+    overflow: hidden;
+}
+
+.aboutp {
+    padding: 0 20px;
+    font-family: sans-serif;
+    font-size: 40px;
+    letter-spacing: -3px;
+    line-height: 41px;
+    line-break: auto;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .marq {
+        margin-bottom: -90px
+    }
+
+    .aboutp {
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: -2px;
+    }
+}
